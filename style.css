@@ -1,0 +1,282 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Animated dark background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-45deg, #0f0f1a, #141e30, #1f1c2c, #0f0f1a);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Center container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass login box */
+.login-box {
+    width: 320px;
+    padding: 30px;
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    color: white;
+    text-align: center;
+}
+
+/* Title */
+.login-box h1 {
+    font-size: 22px;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+.login-box p {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* Inputs */
+.login-box input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Input glow on focus */
+.login-box input:focus {
+    border: 1px solid #00e5ff;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+/* Button */
+.login-box button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(90deg, #00e5ff, #7c4dff);
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button hover glow */
+.login-box button:hover {
+    box-shadow: 0 0 15px #00e5ff;
+    transform: scale(1.05);
+}
+/* DASHBOARD */
+.dashboard {
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 150px;
+    padding: 20px;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+.actions input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.actions button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #00e5ff, #7c4dff);
+    color: white;
+}
+/* MOBILE APP STYLE */
+
+.phone-app {
+    width: 380px;
+    min-height: 700px;
+
+    padding: 20px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 30px rgba(0,229,255,0.2);
+
+    color: white;
+}
+
+.top-bar {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.top-bar h2 {
+    color: #00e5ff;
+    margin-bottom: 5px;
+}
+
+.balance-card {
+    background: linear-gradient(
+        135deg,
+        #00e5ff,
+        #7c4dff
+    );
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.balance-card h1 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.mini-card {
+    flex: 1;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.08);
+
+    text-align: center;
+}
+
+.transaction-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.transaction-box input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.transaction-box button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #7c4dff
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.transaction-box button:hover {
+    transform: scale(1.03);
+}
+#transactions{
+    list-style:none;
+    margin-top:15px;
+    text-align:left;
+}
+
+#transactions li{
+    padding:12px;
+    margin-top:10px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:10px;
+}
+.developer{
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#00e5ff;
+
+    font-weight:bold;
+
+    text-shadow:0 0 10px #00e5ff;
+}

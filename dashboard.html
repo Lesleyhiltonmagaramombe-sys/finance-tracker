@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="phone-app">
+
+    <div class="top-bar">
+        <h2>Finance Tracker</h2>
+        <p>Welcome, <span id="user"></span></p>
+    </div>
+
+    <div class="balance-card">
+        <h3>Total Balance</h3>
+        <h1>$<span id="balance">0</span></h1>
+    </div>
+
+    <div class="stats">
+
+        <div class="mini-card">
+            <h4>Income</h4>
+            <p>$<span id="income">0</span></p>
+        </div>
+
+        <div class="mini-card">
+            <h4>Expenses</h4>
+            <p>$<span id="expenses">0</span></p>
+        </div>
+
+    </div>
+
+    <div class="transaction-box">
+
+        <input type="number"
+               id="amount"
+               placeholder="Enter Amount">
+
+        <button onclick="addIncome()">
+            Add Income
+        </button>
+
+        <button onclick="addExpense()">
+            Add Expense
+        </button>
+       
+
+        <button onclick="resetData()">
+            Reset Data
+        </button>
+         <button onclick="logout()">
+        Logout
+        </button>
+        <input
+type="number"
+id="budget"
+placeholder="Set Monthly Budget">
+
+<button onclick="setBudget()">
+Set Budget
+</button>
+
+        <p style="text-align:center; margin-top:20px; opacity:0.7;">
+    Developed by Lesley H Magaramombe
+</p>
+
+        <h3>Recent Transactions</h3>
+        <ul id="transaction-list">
+            <!-- Transactions will be appended here -->
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
